@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Muli', sans-serif;
+  color: #333333;
 }
 
 .container {
@@ -359,6 +360,11 @@ template {
   background-color: #fff;
 }
 
+.header__search {
+  margin-right: auto;
+  margin-left: 108px;
+}
+
 .header-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -371,11 +377,6 @@ template {
           justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 40px;
-}
-
-.header__search {
-  margin-right: auto;
-  margin-left: 108px;
 }
 
 .search {
@@ -417,6 +418,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
 }
 
 .user__avatar {
@@ -425,5 +427,12 @@ template {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.user__name {
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  margin-left: 18px;
 }
 /*# sourceMappingURL=style.css.map */
