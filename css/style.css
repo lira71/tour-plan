@@ -356,16 +356,16 @@ template {
   display: none;
 }
 
-.header {
+.navbar {
   background-color: #fff;
 }
 
-.header__search {
+.navbar__search {
   margin-right: auto;
   margin-left: 108px;
 }
 
-.header-top {
+.navbar-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
