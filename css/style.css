@@ -1255,9 +1255,18 @@ template {
   .newsletter__title {
     margin-bottom: 37px;
   }
+  .reviews {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .reviews__title {
-    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 40px;
+    line-height: 23px;
+    max-width: 245px;
+    font-size: 18px;
   }
   .subscribe {
     width: 100%;
