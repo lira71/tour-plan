@@ -1204,6 +1204,15 @@ template {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .newsletter-title {
+    font-size: 20px;
+  }
+  .newsletter-title__strong {
+    font-size: 30px;
+  }
+  .reviews__title {
+    font-size: 30px;
+  }
   .reviews-slider__item {
     padding: 0 30px 30px;
   }
@@ -1231,6 +1240,9 @@ template {
   .logo {
     width: 99px;
   }
+  .hotel {
+    padding-bottom: 40px;
+  }
   .hotel__slider {
     margin-bottom: 20px;
   }
@@ -1242,6 +1254,10 @@ template {
   }
   .newsletter__title {
     margin-bottom: 37px;
+  }
+  .reviews__title {
+    font-size: 18px;
+    margin-bottom: 40px;
   }
   .subscribe {
     width: 100%;
