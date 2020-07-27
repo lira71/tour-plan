@@ -12,10 +12,10 @@
       margin-bottom: 65px
       text-transform: uppercase
     &__cards
-      display: grid
-      grid-template: repeat(2, 500px) / repeat(3, 350px)
-      column-gap: 30px
-      row-gap: 30px
+      display: grid;
+      grid-auto-rows: auto
+      grid-template-columns: 1fr 1fr 1fr
+      grid-gap: 30px;
       color: white
 .active   
   &-card
@@ -30,6 +30,7 @@
       width: 366px
       overflow: hidden
       object-fit: cover
+      object-position: right top
       border-radius: 8px 0px 0px 8px
     &__offer
       position: absolute

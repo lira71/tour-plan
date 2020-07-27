@@ -826,12 +826,10 @@ template {
 .packages-container__cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (500px)[2];
-  -ms-grid-columns: (350px)[3];
-      grid-template: repeat(2, 500px)/repeat(3, 350px);
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
-  row-gap: 30px;
+  grid-auto-rows: auto;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
   color: white;
 }
 
@@ -855,6 +853,8 @@ template {
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: right top;
+     object-position: right top;
   border-radius: 8px 0px 0px 8px;
 }
 
@@ -1678,9 +1678,9 @@ template {
     margin-bottom: 45px;
   }
   .packages-container__cards {
-    -ms-grid-rows: (500px)[5];
+    -ms-grid-rows: (1fr)[5];
     -ms-grid-columns: 100%;
-        grid-template: repeat(5, 500px)/100%;
+        grid-template: repeat(5, 1fr)/100%;
     -webkit-column-gap: 0;
             column-gap: 0;
     row-gap: 20px;
@@ -1763,9 +1763,6 @@ template {
 @media (max-width: 480px) {
   .slider {
     height: 179px;
-  }
-  .packages {
-    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
