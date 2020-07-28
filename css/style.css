@@ -2193,6 +2193,9 @@ template {
 }
 
 @media (max-width: 480px) {
+  .search__input {
+    width: 250px;
+  }
   .slider {
     height: 179px;
   }
