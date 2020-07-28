@@ -138,15 +138,14 @@
         left: 0
         top: 0
         right: 0
-    &__user, &__search
+    &__user
+      flex-direction: column
+      justify-content: center
       &_mobile
         &_hidden
           display: none
         &_visible
           display: flex
-    &__user
-      flex-direction: column
-      justify-content: center
     &-bottom
       display: none
       position: fixed
@@ -164,6 +163,16 @@
         &_mobile
           &_visible
             display: block
+  .search
+    &__navbar
+      margin-right: auto
+      margin-left: auto
+      margin-bottom: 15px
+      &_mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
   .menu
     &-button
       display: flex
@@ -187,6 +196,7 @@
         color: $light
         margin-left: 0  
         margin-top: 10px
+        margin-bottom: 20px
   .stars
     flex-basis: auto
   .hotel
