@@ -2013,44 +2013,7 @@ template {
   }
 }
 
-@media (max-width: 576px) {
-  .logo {
-    width: 99px;
-  }
-  .hotel {
-    padding-bottom: 40px;
-  }
-  .hotel__slider {
-    margin-bottom: 20px;
-  }
-  .hotel-slider {
-    height: 250px;
-  }
-  .newsletter {
-    padding: 76px 0 83px 0;
-  }
-  .newsletter__title {
-    margin-bottom: 37px;
-  }
-  .reviews {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .reviews__title {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-    line-height: 23px;
-    max-width: 245px;
-    font-size: 18px;
-  }
-  .subscribe {
-    width: 100%;
-  }
-  .card {
-    width: 100%;
-  }
+@media (max-width: 630px) {
   .footer-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -2065,8 +2028,6 @@ template {
   .footer__social-network {
     -ms-grid-row: 2;
     grid-row: 2;
-    -ms-grid-column: 1;
-    grid-column: 1;
   }
   .footer__additional {
     -ms-grid-row: 3;
@@ -2077,8 +2038,6 @@ template {
   .footer__categories {
     -ms-grid-row: 4;
     grid-row: 4;
-    -ms-grid-column: 1;
-    grid-column: 1;
   }
   .footer__legal {
     -ms-grid-row: 5;
@@ -2089,14 +2048,10 @@ template {
   .footer__contact-details {
     -ms-grid-row: 6;
     grid-row: 6;
-    -ms-grid-column: 1;
-    grid-column: 1;
   }
   .footer__contact-form {
     -ms-grid-row: 7;
     grid-row: 7;
-    -ms-grid-column: 1;
-    grid-column: 1;
   }
   .footer__info {
     -ms-flex-preferred-size: 100%;
@@ -2139,9 +2094,53 @@ template {
   }
 }
 
+@media (max-width: 576px) {
+  .logo {
+    width: 99px;
+  }
+  .hotel {
+    padding-bottom: 40px;
+  }
+  .hotel__slider {
+    margin-bottom: 20px;
+  }
+  .hotel-slider {
+    height: 250px;
+  }
+  .newsletter {
+    padding: 76px 0 83px 0;
+  }
+  .newsletter__title {
+    margin-bottom: 37px;
+  }
+  .reviews {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .reviews__title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    line-height: 23px;
+    max-width: 245px;
+    font-size: 18px;
+  }
+  .subscribe {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
 @media (max-width: 480px) {
   .slider {
     height: 179px;
+  }
+  .footer-past__link {
+    margin-right: 9px;
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
