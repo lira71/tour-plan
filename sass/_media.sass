@@ -138,15 +138,8 @@
         left: 0
         top: 0
         right: 0
-    &__user, &__search
-      &_mobile
-        &_hidden
-          display: none
-        &_visible
-          display: flex
-    &__user
-      flex-direction: column
-      justify-content: center
+    
+    
     &-bottom
       display: none
       position: fixed
@@ -159,6 +152,23 @@
         display: block
     &-menu
       flex-direction: column
+      &__search
+        margin-left: auto
+        margin-right: auto
+        &_mobile
+          &_hidden
+            display: none
+          &_visible
+            display: flex
+      &__user
+        flex-direction: column
+        justify-content: center
+        margin-bottom: 10px
+        &_mobile
+          &_hidden
+            display: none
+          &_visible
+            display: flex
       &__item
         margin-bottom: 20px   
         &_mobile
