@@ -138,14 +138,15 @@
         left: 0
         top: 0
         right: 0
-    &__user
-      flex-direction: column
-      justify-content: center
+    &__user, &__search
       &_mobile
         &_hidden
           display: none
         &_visible
           display: flex
+    &__user
+      flex-direction: column
+      justify-content: center
     &-bottom
       display: none
       position: fixed
@@ -163,16 +164,6 @@
         &_mobile
           &_visible
             display: block
-  .search
-    &__navbar
-      margin-right: auto
-      margin-left: auto
-      margin-bottom: 15px
-      &_mobile
-        &_hidden
-          display: none
-        &_visible
-          display: flex
   .menu
     &-button
       display: flex
@@ -196,7 +187,6 @@
         color: $light
         margin-left: 0  
         margin-top: 10px
-        margin-bottom: 20px
   .stars
     flex-basis: auto
   .hotel
@@ -298,7 +288,7 @@
     &__input
       flex-basis: 100%
 @media (max-width: 630px)
-   .footer
+  .footer
     &-wrapper
       grid-template-columns: 1fr
       grid-row-gap: 30px
@@ -349,6 +339,9 @@
       margin-bottom: 20px
     &-slider
       height: 250px
+  .search
+    &__input
+      width: 250px  
   .newsletter
     padding: 76px 0 83px 0
     &__title
@@ -368,9 +361,6 @@
     width: 100%
  
 @media (max-width: 480px)
-  .search
-    &__input
-      width: 250px
   .slider
     height: 179px
   .footer
@@ -381,4 +371,5 @@
   
     
       
+  
   
