@@ -21,10 +21,11 @@ $body = "
 ";};
 
 if ($send_form == 'send_subscribe') {
-$title = "Подписка на новости сайта Best Tour Plan";
-$body = "
-<h2>Спасибо за подписку!</h2>
-<b>Следите за обновлениями.</b>";};
+  $title = "Новая подписка Best Tour Plan";
+  $body = "
+  <h2>Новая подписка на рассылку</h2>
+  <b>email:</b> $email<br>
+  ";};
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
