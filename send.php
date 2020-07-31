@@ -10,7 +10,7 @@ $email = $_POST['email'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 $send_form = $_POST['send_form'];
-
+$button_sub = 
 // Формирование самого письма
 if ($send_form == 'send_message') {
 $title = "Новое обращение Best Tour Plan";
@@ -66,5 +66,6 @@ if ($send_form == 'send_message') {
     header('Location: thanks.html');
   }; 
 if ($send_form == 'send_subscribe') {
+    
     header('Location: subscribe.html');
   }; 
