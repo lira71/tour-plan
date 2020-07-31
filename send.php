@@ -37,7 +37,7 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
+    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'lidia.nikogosyan.93@gmail.com'; // Логин на почте
     $mail->Password   = '2kzM163pA'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
