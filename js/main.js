@@ -34,11 +34,6 @@ $(document).ready(function () {
         $('.navbar-bottom').toggleClass('navbar-bottom_visible');
     });
 
-    var subscribeButton = $('.subscribe__button');
-    subscribeButton.on('click', function () {
-        event.preventDefault();
-    });
-
     var modalButton = $('[data-toggle="modal"]');  //document.QuerySelector
     var closeModalButton = $('.modal__close');
 

@@ -66,6 +66,5 @@ if ($send_form == 'send_message') {
     header('Location: thanks.html');
   }; 
 if ($send_form == 'send_subscribe') {
-    
     header('Location: subscribe.html');
   }; 
