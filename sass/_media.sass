@@ -124,6 +124,23 @@
       grid-template-columns: 283px 1fr 1fr
       &__documents
         grid-column-start: 1
+@media ( max-width: 960px)
+  .modal
+    &__dialog
+      padding: 30px 70px
+
+@media ( max-width: 880px)
+  .modal
+    &__info
+      font-size: 11px
+
+@media ( max-width: 800px)
+  .modal
+    &__dialog
+      padding: 30px 50px
+    &__button
+      width: 100%
+      margin-bottom: 15px
 @media ( max-width: 768px)
   .container
     max-width: 576px
@@ -340,6 +357,9 @@
         grid-row: 3
         grid-column: 1
         justify-content: start
+  .modal
+    &__dialog
+      padding: 30px 30px
 @media ( max-width: 576px)
   .logo
     width: 99px
@@ -369,7 +389,10 @@
     width: 100%
   .card
     width: 100%
- 
+  .modal
+    &__dialog
+      min-width: 80%
+      padding: 20px 40px
 @media (max-width: 480px)
   .slider
     height: 179px
@@ -378,6 +401,10 @@
       &__link
         margin-right: 9px
         font-size: 10px
+  .modal
+    &__dialog
+      min-width: 93%
+      padding: 20px 30px
   
     
       
