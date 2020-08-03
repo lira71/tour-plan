@@ -59,4 +59,26 @@ $(document).ready(function () {
     $(document).keydown(function(eventObject){
         if (eventObject.which == 27) {closeModal(event)};
     });
-});
+
+    // Обработка форм
+    $('.form').each(function () {
+        $(this).validate({
+            errorClass: "invalid",
+            messages: {
+                name: {
+                    required: "Please specify your name",
+                    minlength: "The name must be at least 2 characters long",
+                },
+                email: {
+                    required: "We need your email address to contact you",
+                    email: "Your email address must be in the format of name@domain.com"
+                },
+                phone: {
+                    required: "We need your phone number to contact you",
+                },
+            },
+        });
+    });
+    
+    });
+  

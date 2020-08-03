@@ -27,7 +27,8 @@
       grid-template: repeat(2, 250px) / 300px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
 @media ( max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -97,7 +98,8 @@
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
     &__input
-      flex-basis: 49%
+      &-group
+        flex-basis: 48%
     &__logo
       grid-row: 1 / 2
       grid-column: span 2
@@ -313,7 +315,8 @@
         padding: 7px 12px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
 @media (max-width: 630px)
   .footer
     &-wrapper
