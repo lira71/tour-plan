@@ -4,16 +4,13 @@ var hotelSlider = new Swiper(".hotel-slider", {
   direction: "horizontal",
   loop: true,
 
-  //Effect
   effect: "fade",
 
-  // Navigation arrows
   navigation: {
     nextEl: ".hotel-slider__button--next",
     prevEl: ".hotel-slider__button--prev",
   },
 
-  //Keyboard control
   keyboard: {
     enabled: true,
     onlyInViewport: false,
@@ -26,13 +23,11 @@ var reviewsSlider = new Swiper(".reviews-slider", {
   direction: "horizontal",
   loop: true,
 
-  // Navigation arrows
   navigation: {
     nextEl: ".reviews-slider__button--next",
     prevEl: ".reviews-slider__button--prev",
   },
 
-  //Keyboard control
   keyboard: {
     enabled: true,
     onlyInViewport: false,
@@ -85,23 +80,22 @@ function closeModal(event) {
   modalDialog.removeClass("modal__dialog--visible");
 }
 $(document).keydown(function (e) {
-  // ESCAPE key pressed
+  
   if (e.keyCode == 27) {
     closeModal(event);
   }
 });
 $(document).mouseup(function (e) {
-  // событие клика по веб-документу
-  var div = $(".modal__dialog"); // тут записываем в переменную элемент
+  
+  var div = $(".modal__dialog"); 
   if (
-    !div.is(e.target) && // если клик был не по нашему блоку
+    !div.is(e.target) && 
     div.has(e.target).length === 0
   ) {
-    // и не по его дочерним элементам
-    closeModal(event); // вызываем функцию скрытия
+    
+    closeModal(event); 
   }
 });
-
 
 //Валидация форм
 $(".form").each(function () {
@@ -125,3 +119,5 @@ $(".form").each(function () {
 });
 //Маска для телефона
 $('input[name ="phone"]').mask('+7 (000) 000-00-00');
+
+AOS.init();
