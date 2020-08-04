@@ -834,7 +834,6 @@ template {
 .map {
   width: 350px;
   height: 215px;
-  background-color: #000000;
   border-radius: 10px;
   overflow: hidden;
 }
