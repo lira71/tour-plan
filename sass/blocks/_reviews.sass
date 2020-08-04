@@ -1,0 +1,89 @@
+.reviews
+  padding: 40px 0 70px 0
+  &__title
+    margin-bottom: 70px
+    margin-top: 0
+    font-weight: 700
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+  &-slider
+    &__item
+      position: relative
+      display: flex
+      flex-direction: column
+      align-items: center
+      max-width: 730px
+      margin: 45px auto 0
+      padding: 0 97px 30px
+      background-color: #FFFFFF
+      border-radius: 8px
+      &::before
+        content: ''
+        position: absolute
+        top: 13px
+        left: 64px
+        width: 70px
+        height: 47px
+        background-image: url(../img/reviews/quote-left.svg)
+        background-repeat: no-repeat
+      &::after
+        content: ''
+        position: absolute
+        top: 119px
+        right: 60px
+        width: 70px
+        height: 47px
+        background-image: url(../img/reviews/quote-right.svg)
+        background-repeat: no-repeat
+    &__button
+      position: absolute
+      z-index: 99
+      top: 50%
+      transform: translateY(-50%)
+      width: 30px
+      height: 30px
+      background-color: transparent
+      background-repeat: no-repeat
+      background-size: 10px
+      background-position: center
+      border: none
+      outline: none
+      cursor: pointer
+      &--prev
+        background-image: url(../img/reviews/arrow-left.svg)
+        left: 0
+      &--next
+        background-image: url(../img/reviews/arrow-right.svg)
+        right: 0
+    &__profile
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: -45px
+      margin-bottom: 30px
+    &__avatar
+      width: 90px
+      height: 90px
+      margin-bottom: 9px
+      border-radius: 50%
+      object-fit: cover
+    &__username
+      margin-bottom: 10px
+      font-weight: 700
+      font-size: 12px
+      line-height: 15px
+      color: $primary
+    &__date
+      margin-bottom: 4px
+      font-size: 10px
+      line-height: 13px
+    &__rating
+      display: flex
+      align-items: center
+    &__text
+      margin: 0
+      font-size: 12px
+      line-height: 160%
+      text-align: justify

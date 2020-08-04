@@ -1,0 +1,177 @@
+.hotel
+  padding: 23px 0 70px 0
+  &-info
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-bottom: 20px
+    &__offer
+      margin: 4px 0 0 14px
+    &__name
+      margin: 4px 0 0 0
+  &-name
+    font-size: 24px
+    line-height: 30px
+    text-transform: uppercase
+  &-wrapper
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+  &-descr
+    margin: 0
+    font-size: 12px
+    line-height: 15px
+  &-grid
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &-slider
+    width: 728px
+    height: 450px
+    border-radius: 8px
+    margin: 0
+    &__item
+      position: relative
+      width: 100%
+      height: 100%
+      border-radius: 8px
+      &::after
+        content: ""
+        position: absolute
+        z-index: 10
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+    &__button
+      position: absolute
+      z-index: 99
+      width: 30px
+      height: 30px
+      border: none
+      background-repeat: no-repeat
+      background-position: center
+      background-color: transparent
+      cursor: pointer
+      outline: none
+      &--prev
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+        background-image: url(../img/hotel/arrow-prev.svg)
+      &--next
+        top: 50%
+        right: 0
+        transform: translateY(-50%)
+        background-image: url(../img/hotel/arrow-next.svg)
+.stars
+  flex-basis: 100%
+.offer
+  padding: 4px 9px
+  font-weight: 600
+  font-size: 10px
+  line-height: 13px
+  background-color: $primary
+  border-radius: 3px
+  color: $light
+.rating
+  max-width: 65px
+  min-height: 45px
+  text-align: center
+  color: $light
+  background-color: $primary
+  border-radius: 4px
+  cursor: pointer
+  &_small
+    font-size: 11px
+  &__text
+    font-weight: 600
+    font-size: 8px
+    line-height: 10px
+  &__counter
+    font-weight: 700
+    font-size: 14px
+    line-height: 18px
+.swiper-slide
+  &__image
+    width: 100%
+    height: 100%
+    object-fit: cover
+.booking-wrap
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+.booking
+  padding: 28px
+  width: 350px
+  font-family: "Nunito", sans-serif
+  color: $light
+  background-color: $dark
+  border-radius: 8px
+  &__info
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin-bottom: 9px
+  &__price
+    display: flex
+    flex-direction: column
+  &__start-price
+    font-size: 10px
+    line-height: 14px
+  &__pricetag
+    font-weight: 800
+    font-size: 24px
+    line-height: 33px
+  &__per-room
+    font-size: 12px
+    line-height: 16px
+  &__room
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    margin-top: 4px
+    min-height: 40px
+    font-size: 12px
+    line-height: 16px
+  &__text
+    display: flex
+    align-items: center
+    justify-content: space-between
+    min-width: 80px
+  &__button
+    width: 100%
+    min-height: 45px
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    border-radius: 4px
+.call-center
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 17px
+  &__text
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__phone-number
+    display: flex
+    align-items: center
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+    color: inherit
+  &__number
+    margin-left: 8px
+.map
+  width: 350px
+  height: 215px
+  background-color: #000000
+  border-radius: 10px
+  overflow: hidden
+  &__google
+    width: 100%
+    height: 100%
+
