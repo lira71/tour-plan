@@ -39,15 +39,15 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'vasin.da93@yandex.ru'; // Логин на почте
-    $mail->Password   = '_FwbF23Y4ZXrtdG'; // Пароль на почте
+    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
+    $mail->Username   = 'lidia.nikogosyan.93@gmail.com'; // Логин на почте
+    $mail->Password   = '2kzM163pA'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('vasin.da93@yandex.ru', 'Денис Васин'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('lidia.nikogosyan.93@gmail.com', 'Лидия Никогосян'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('vasin.da93@gmail.com');
+    $mail->addAddress('lida.lidina.93@mail.ru');
 
 // Отправка сообщения
 $mail->isHTML(true);
