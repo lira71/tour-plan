@@ -118,8 +118,6 @@
             </p>
           </div>
           <div
-            data-toggle="modal"
-            data-href="#rating-modal"
             class="rating hotel-info__rating"
           >
             <span class="rating__text">User Rattings</span>
@@ -916,76 +914,6 @@
               <!-- /.reviews-slider__item -->
             </div>
             <!-- /.swiper-slide -->
-
-            <div class="swiper-slide">
-              <div class="reviews-slider__item">
-                <div class="reviews-slider__profile">
-                  <img
-                    src="img/reviews/reviews-avatar-7.jpg"
-                    alt="Photo: Megan Fox"
-                    class="reviews-slider__avatar"
-                  />
-                  <h3 class="reviews-slider__username">Jack Hummer</h3>
-                  <span class="reviews-slider__date">Stayed 10 Nov, 2019</span>
-                  <div class="reviews-slider__rating">
-                    <img src="img/hotel/star.svg" alt="star" />
-                    <img src="img/hotel/star.svg" alt="star" />
-                    <img src="img/hotel/star.svg" alt="star" />
-                    <img src="img/hotel/star.svg" alt="star" />
-                    <img src="img/hotel/star.svg" alt="star" />
-                  </div>
-                  <!-- /.reviews-slider__rating -->
-                </div>
-                <!-- /.reviews-slider__profile -->
-                <p class="reviews-slider__text">
-                  Clean room, everything as it should be. Great customer service
-                  and attention to detail. The sheets felt amazing, I’m a bit
-                  picky but the sheets were crisp, white and clean smelling. You
-                  know the clean smell after you bleach? Not bleach smell just
-                  pristine smelling. We recently stayed at the Double Tree
-                  Hilton in Madrid/Prado, the service and our stay exceeded our
-                  expectations. I have always had an excellent experience when
-                  staying at any of the Hilton chains
-                </p>
-              </div>
-              <!-- /.reviews-slider__item -->
-            </div>
-            <!-- /.swiper-slide -->
-
-            <div class="swiper-slide">
-              <div class="reviews-slider__item">
-                <div class="reviews-slider__profile">
-                  <img
-                    src="img/reviews/reviews-avatar-8.jpg"
-                    alt="Photo: Megan Fox"
-                    class="reviews-slider__avatar"
-                  />
-                  <h3 class="reviews-slider__username">Linda Parker</h3>
-                  <span class="reviews-slider__date">Stayed 05 Nov, 2019</span>
-                  <div class="reviews-slider__rating">
-                    <img src="img/hotel/star.svg" alt="star" />
-                    <img src="img/hotel/star.svg" alt="star" />
-                    <img src="img/hotel/star.svg" alt="star" />
-                    <img src="img/hotel/star.svg" alt="star" />
-                    <img src="img/hotel/star.svg" alt="star" />
-                  </div>
-                  <!-- /.reviews-slider__rating -->
-                </div>
-                <!-- /.reviews-slider__profile -->
-                <p class="reviews-slider__text">
-                  Three stars because when I stayed at a Hilton in the District
-                  of Columbia. They put a $300 hold on my card for incidentals
-                  and services which they had none at that establishment. They
-                  did not even have room service or a bar. In addition to that I
-                  changed my room twice because the rooms had stains in the
-                  carpet and bedding as well as the walls were filthy and the
-                  towels were not clean. I used my own bedding and towels
-                  because my reservation was paid for and non refundable.
-                </p>
-              </div>
-              <!-- /.reviews-slider__item -->
-            </div>
-            <!-- /.swiper-slide -->
           </div>
           <!-- /.swiper-wrapper -->
           <button
@@ -1012,7 +940,10 @@ of chamarel"
               class="activities__image"
             />
             <h3 class="card__title">The curious corner of chamarel</h3>
-            <button class="button card__button">Book Now</button>
+            <button
+            data-toggle="modal"
+            data-href="#activities-modal" 
+            class="button card__button">Book Now</button>
           </div>
           <!-- /.card activities__card -->
           <div class="card activities__card">
@@ -1023,7 +954,10 @@ course"
               class="activities__image"
             />
             <h3 class="card__title">Gymkhana club golf course</h3>
-            <button class="button card__button">Book Now</button>
+            <button 
+            data-toggle="modal"
+            data-href="#activities-modal" 
+            class="button card__button">Book Now</button>
           </div>
           <!-- /.card activities__card -->
           <div class="card activities__card">
@@ -1036,7 +970,10 @@ trip - full day"
             <h3 class="card__title">
               Tamarind falls hiking trip&nbsp;- full day
             </h3>
-            <button class="button card__button">Book Now</button>
+            <button 
+            data-toggle="modal"
+            data-href="#activities-modal" 
+            class="button card__button">Book Now</button>
           </div>
           <!-- /.card activities__card -->
           <div class="card activities__card">
@@ -1047,7 +984,10 @@ quest"
               class="activities__image"
             />
             <h3 class="card__title">The blue marine discovery quest</h3>
-            <button class="button card__button">Book Now</button>
+            <button 
+            data-toggle="modal"
+            data-href="#activities-modal" 
+            class="button card__button">Book Now</button>
           </div>
           <!-- /.card activities__card -->
         </div>
@@ -1296,7 +1236,7 @@ quest"
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
-    <div class="modal" id="rating-modal">
+    <div class="modal" id="activities-modal">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
@@ -1304,7 +1244,7 @@ quest"
           <img src="img/modal/close.svg" alt="icon: close" />
         </a>
         <h3 class="modal__title modal__title--indent">
-          Send us a feedback
+          Sign up for the event
         </h3>
         <form action="send.php" method="POST" class="modal__form form">
           <input

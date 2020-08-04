@@ -20,9 +20,6 @@ var hotelSlider = new Swiper(".hotel-slider", {
   },
 });
 
-//Cоздание parallax эффекта newsletter
-$(".newsletter").parallax({ imageSrc: "img/newsletter/newsletter-bg.jpg" });
-
 //Слайдер для reviews
 var reviewsSlider = new Swiper(".reviews-slider", {
   // Optional parameters
@@ -68,6 +65,7 @@ $(".navbar-menu__item").on("click", function () {
   $(".navbar-menu").removeClass("navbar-menu--active");
 });
 
+
 //Модальное окно
 var modalButton = $("[data-toggle=modal]");
 var closeModalButton = $(".modal__close");
@@ -103,6 +101,7 @@ $(document).mouseup(function (e) {
     closeModal(event); // вызываем функцию скрытия
   }
 });
+
 
 //Валидация форм
 $(".form").each(function () {
