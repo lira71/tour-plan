@@ -1913,7 +1913,7 @@ template {
   .navbar-menu--mobile {
     position: absolute;
     z-index: 10;
-    right: -100%;
+    left: -100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1924,7 +1924,7 @@ template {
     background-color: #0A223D;
   }
   .navbar-menu--active {
-    right: 0;
+    left: 0;
   }
   .navbar-menu__item {
     margin-bottom: 20px;
