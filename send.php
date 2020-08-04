@@ -22,12 +22,10 @@ if (null === $email) {
 	";
 } else {
 	//Письмо на подписку новостей
-	$title = "Подписка  на рассылку Best Tour Plan";
+	$title = "Новая подписка Best Tour Plan";
 	$body = "
-	<h2>Subscribe to our NEWSLETTER</h2>
-	<b>Почта:</b> $email<br>
-	<b>Сообщение:</b>
-	Благодарим Вас за подписку на рассылку свежих новостей!
+  <h2>Новая подписка на рассылку</h2>
+  <b>email:</b> $email<br>
 	";
 }
 
