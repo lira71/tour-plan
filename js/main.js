@@ -117,11 +117,11 @@ $(".form").each(function () {
         email: "Your email address must be in the format of name@domain.com",
       },
       phone: {
-        required: "Please specify your phone number",
-        minlength: "wrong number dialed",
+        required: "We need your phone number to contact you",
+        minlength: "Wrong number",
       },
     },
   });
 });
 //Маска для телефона
-$('input[name|="phone"]').mask("+7(999) 999-9999");
+$('input[name ="phone"]').mask('+7 (000) 000-00-00');

@@ -44,7 +44,7 @@ input {
 }
 
 .invalid {
-  color: red;
+  color: #EC1F46;
   font-size: 12px;
 }
 
