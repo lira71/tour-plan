@@ -610,7 +610,7 @@
             name="email"
             required
           />
-          <button type="submit" class="button subscribe__button">Send</button>
+          <button type="submit" class="button subscribe__button" name="send_form" value="send_message">Send</button>
         </form>
       </div>
       <!-- /.newsletter-wrapper -->
@@ -1031,7 +1031,7 @@ quest"
                 placeholder="Message"
                 name="message"
               ></textarea>
-              <button type="submit" class="button footer__button">Send</button>
+              <button type="submit" class="button footer__button" name="send_form" value="send_feedback">Send</button>
               <span class="footer__info">* Required Fields</span>
             </form>
           </div>
@@ -1066,34 +1066,40 @@ quest"
           booking
         </h3>
         <form action="send.php" method="POST" class="modal__form form">
-          <input
+          <div class="modal__input-group">
+            <input
             type="text"
             class="input modal__input"
             placeholder="Your Full Name*"
             name="name"
             required
             minlength="2"
-          /><input
+          />
+          </div>
+          <div class="modal__input-group">
+            <input
             type="tel"
             class="input modal__input"
             placeholder="Phone Number*"
             name="phone"
             required
-            
           />
-          <input
+          </div>
+          <div class="modal__input-group">
+            <input
             type="email"
             class="input modal__input"
             placeholder="Email*"
             name="email"
             required
           />
+          </div>
           <textarea
             class="modal__message"
             placeholder="Message"
             name="message"
           ></textarea>
-          <button type="submit" class="button modal__button">Send</button>
+          <button type="submit" class="button modal__button" name="send_form" value="send_feedback">Send</button>
           <span class="modal__info">* Required Fields</span>
         </form>
       </div>
@@ -1111,34 +1117,40 @@ quest"
           feedback form
         </h3>
         <form action="send.php" method="POST" class="modal__form form">
-          <input
+          <div class="modal__input-group">
+            <input
             type="text"
             class="input modal__input"
             placeholder="Your Full Name*"
             name="name"
             required
             minlength="2"
-          /><input
+          />
+          </div>
+          <div class="modal__input-group">
+            <input
             type="tel"
             class="input modal__input"
             placeholder="Phone Number*"
             name="phone"
             required
-            
           />
-          <input
+          </div>
+          <div class="modal__input-group">
+            <input
             type="email"
             class="input modal__input"
             placeholder="Email*"
             name="email"
             required
           />
+          </div>
           <textarea
             class="modal__message"
             placeholder="Message"
             name="message"
           ></textarea>
-          <button type="submit" class="button modal__button">Send</button>
+          <button type="submit" class="button modal__button"  name="send_form" value="send_feedback">Send</button>
           <span class="modal__info">* Required Fields</span>
         </form>
       </div>

@@ -5,29 +5,29 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
-$name = isset($_POST['name']) ? $_POST['name'] : null;
-$phone = isset($_POST['phone']) ? $_POST['phone'] : null;
-$message = isset($_POST['message']) ? $_POST['message'] : null;
-// отправка данных на подписку
-$email = isset($_POST['email']) ? $_POST['email'] : null;
-
-if (null === $email) {
-	// Формирование самого письма
-	$title = "Новое обращение Best Tour plan";
-	$body = "
-	<h2>Новое обращение</h2>
-	<b>Имя:</b> $name<br>
-	<b>Телефон:</b> $phone<br><br>
-	<b>Сообщение:</b><br>$message
-	";
-} else {
-	//Письмо на подписку новостей
-	$title = "Новая подписка Best Tour Plan";
-	$body = "
+$name = $_POST['name'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$message = $_POST['message'];
+$send_form = $_POST['send_form'];
+// Формирование самого письма
+if ($send_form == 'send_message') {
+  $title = "Новая подписка Best Tour Plan";
+  $body = "
   <h2>Новая подписка на рассылку</h2>
   <b>email:</b> $email<br>
-	";
-}
+  ";
+};
+
+if ($send_form == 'send_feedback') {
+  $title = "Новое обращение Best Tour Plan";
+$body = "
+<h2>Новое обращение</h2>
+<b>Имя:</b> $name<br>
+<b>Телефон:</b> $phone<br><br>
+<b>Сообщение:</b><br>$message
+";
+  };
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -64,8 +64,10 @@ else {$result = "error";}
 }
 
 // Отображение результата
-if (null === $email) {
-	echo file_get_contents('thanks.html');
-} else {
-	echo file_get_contents('subscribe.html');
-}
+if ($send_form == 'send_message') {
+    header('Location: subscribe.html');
+  }; 
+if ($send_form == 'send_feedback') {
+    header('Location: thanks.html');
+  }; 
+
