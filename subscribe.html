@@ -267,7 +267,7 @@
           Send us a message
         </h3>
         <form action="send.php" method="POST" class="footer__form form">
-          <div class="footer__input-group">
+          <div class="footer__input-double">
             <input
               type="text"
               class="input footer__input"
@@ -277,7 +277,7 @@
               minlength="2"
             />
           </div>
-          <div class="footer__input-group">
+          <div class="footer__input-double">
             <input
               type="tel"
               class="input footer__input"
@@ -327,28 +327,34 @@
       booking
     </h3>
     <form action="send.php" method="POST" class="modal__form form">
-      <input
+      <div class="modal__input-double">
+        <input
         type="text"
         class="input modal__input"
         placeholder="Your Full Name*"
         name="name"
         required
         minlength="2"
-      /><input
+      />
+      </div>
+      <div class="modal__input-double">
+        <input
         type="tel"
         class="input modal__input"
         placeholder="Phone Number*"
         name="phone"
         required
-        
       />
-      <input
+      </div>
+      <div class="modal__input-double">
+        <input
         type="email"
         class="input modal__input"
         placeholder="Email*"
         name="email"
         required
       />
+      </div>
       <textarea
         class="modal__message"
         placeholder="Message"
@@ -372,28 +378,34 @@
       feedback form
     </h3>
     <form action="send.php" method="POST" class="modal__form form">
-      <input
+      <div class="modal__input-double">
+        <input
         type="text"
         class="input modal__input"
         placeholder="Your Full Name*"
         name="name"
         required
         minlength="2"
-      /><input
+      />
+      </div>
+      <div class="modal__input-double">
+        <input
         type="tel"
         class="input modal__input"
         placeholder="Phone Number*"
         name="phone"
         required
-        
       />
-      <input
+      </div>
+      <div class="modal__input-double">
+        <input
         type="email"
         class="input modal__input"
         placeholder="Email*"
         name="email"
         required
       />
+      </div>
       <textarea
         class="modal__message"
         placeholder="Message"
