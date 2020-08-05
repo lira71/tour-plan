@@ -1,3 +1,4 @@
+$(document).ready(function () {
 //Слайдер для hotel
 var hotelSlider = new Swiper(".hotel-slider", {
   // Optional parameters
@@ -99,7 +100,12 @@ $(document).mouseup(function (e) {
 
 //Валидация форм
 $(".form").each(function () {
-  $(this).validate({
+    $(this).validate({
+      rules: {
+        phone: {
+          minlength: 18
+        }
+      },
     errorClass: "invalid",
     messages: {
       name: {
@@ -120,4 +126,5 @@ $(".form").each(function () {
 //Маска для телефона
 $('input[name ="phone"]').mask('+7 (000) 000-00-00');
 
-AOS.init();
+  AOS.init();
+});
