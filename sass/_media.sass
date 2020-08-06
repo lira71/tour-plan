@@ -2,6 +2,11 @@
 @media ( max-width: 1200px)
   .container
     max-width: 960px
+  .navbar
+    &-menu
+      padding: 23px 0
+    &__search
+      margin-left: 88px
   .hotel
     &-slider
       width: 600px
@@ -56,14 +61,21 @@
     &-slider
       &__item
         max-width: 580px
+    &__title
+      font-size: 30px
   .activities
     padding-bottom: 70px
+    &__title
+      font-size: 30px
     &-wrapper
       flex-wrap: wrap
     &__card
       width: 340px
       height: 255px
       margin-bottom: 20px
+  .packages
+    &__title
+      font-size: 30px
   .packages-wrapper
     grid-template: 1fr 1fr 1fr / 1fr 1fr
   .package
@@ -258,19 +270,33 @@
       .package
         &__image
           max-height: 350px
+  .footer
+    &__title
+      &--indent
+          margin-top: 10px
 @media (max-width: 650px)
   .footer
     &__input
       width: 100%
       &-double
         flex-basis: 100%
-
+  .packages
+    &__title
+      font-size: 25px
+  .reviews
+    &__title
+      font-size: 25px
+  .activities
+    &__title
+      font-size: 25px
 //Адаптив для экранов 576
 @media ( max-width: 576px)
   .logo
     width: 99px
   .reviews
     padding-bottom: 0
+    &__title
+      font-size: 18px
   .activities
     padding-top: 0
     padding-bottom: 60px
@@ -278,6 +304,9 @@
       margin-bottom: 36px
       font-size: 18px
       line-height: 23px
+    .packages
+      &__title
+        font-size: 18px
   .card
     width: 100%
   .footer
