@@ -110,6 +110,7 @@
         grid-row-start: 3
         grid-column: span 5
       &-form
+        max-width: 540px
         grid-row-start: 4
         grid-column: span 5
     &-bottom
@@ -201,6 +202,7 @@
       padding-top: 96px
   .stars
     flex-basis: auto
+    margin-right: 15px
   .hotel
     padding-top: 5px
     &-name
@@ -271,6 +273,10 @@
         &__image
           max-height: 350px
   .footer
+    &__logo
+      width: 95px
+    &-wrapper
+      grid-template-columns: 1fr 10% 1fr 20% 1fr 1fr
     &__title
       &--indent
           margin-top: 10px
@@ -291,6 +297,8 @@
       font-size: 25px
 //Адаптив для экранов 576
 @media ( max-width: 576px)
+  .container
+    max-width: 88%
   .logo
     width: 99px
   .reviews
