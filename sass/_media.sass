@@ -437,40 +437,56 @@
 @media (max-height: 500px) and (max-width: 767px)
   .navbar
     &-menu
-      display: grid
-      grid-template-rows: 55px 55px 55px
-      grid-auto-rows: minmax(55px, min-content)
-      grid-template-columns: 12% 12% 12% 1fr 12% 12% 12%
-      align-items: start
-      justify-items: center
       &--mobile
-        justify-content: flex-start
-        min-height: 100vh
+        flex-direction: row
+        align-items: center
+        padding-top: 20px
+        padding-left: 38px
+        padding-right: 38px
+        padding-bottom: 100px
         flex-wrap: wrap
       &__item
-        margin-bottom: 2px
-        grid-row: 3
+        text-align: left
+        width: 50%
+        margin-bottom: 10px
       &__link
-        font-size: 10px 
+        font-size: 15px
+        line-height: 15px
         font-weight: 500
     &__user
-      margin-bottom: 10px
-      grid-row: 1
-      grid-column: 4
+      width: 20%
+      margin-right: 0
+      margin-bottom: 15px
+      margin-top: 10px
     &__search
+      width: 70%
+      margin-left: 0
+      margin-right: 0
       margin-top: 0
-      margin-bottom: 55px
-      max-width: 300px
-      grid-row: 2
-      grid-column: 3 / 6
+      margin-bottom: 15px
+      max-width: 340px
   .user
+    display: block
+    flex-direction: column
+    justify-content: center
+    color: $light
     &__name
       display: none
+  .search
+    &__input
+      width: 100%
+        
 @media (max-height: 500px) and (max-width: 450px)
   .modal
     &__dialog
       width: 80%
       height: 90%
+  .navbar
+    &-menu
+      &__link
+        font-size: 11px
+        line-height: 15px
+        font-weight: 500
 @media (max-height: 500px) and (min-width: 451px)
   .modal
     &__input
