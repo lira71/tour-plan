@@ -466,7 +466,12 @@
   .user
     &__name
       display: none
-@media (max-height: 500px)
+@media (max-height: 500px) and (max-width: 450px)
+  .modal
+    &__dialog
+      width: 80%
+      height: 90%
+@media (max-height: 500px) and (min-width: 451px)
   .modal
     &__input
       padding: 0 20px
