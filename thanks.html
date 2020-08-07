@@ -6,11 +6,10 @@
     <link
      
      href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
-        rel="preload">
+        rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css" />
     <title>Best Tour Plan - Hotel Booking</title>
   </head>
@@ -18,7 +17,7 @@
     <header class="navbar navbar--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="index.html" class="logo"  data-aos="fade-right">
+          <a href="index.html" class="logo">
             <img
               src="img/navbar/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -124,9 +123,9 @@
   <div class="container">
     <div class="footer-wrapper">
       <img
-        src="img/footer/vertical-logo.svg"
+        data-src="img/footer/vertical-logo.svg"
         alt="Logo: Best Tour Plan"
-        class="footer__logo"
+        class="footer__logo b-lazy"
       />
       <div class="footer__list footer__categories">
         <h3 class="footer__title">all categories</h3>
@@ -249,15 +248,15 @@
             <div class="footer__icon-wrapper">
               <img src="img/footer/contact-phone-call.svg" alt="Icon: phone" />
             </div>
-            Tel (business hours) : 269 1500<br />Tel (hotline) Monday -
-            Saturday: 52&#8209;56&#8209;61&#8209;38 (08:00 am – 20:00 pm)<br />Tel
-            (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+            Tel (business hours) : <a href="tel:2691500">269 1500</a><br />Tel (hotline) Monday -
+            Saturday: <a href="tel:52566138">52&#8209;56&#8209;61&#8209;38</a> (08:00 am – 20:00 pm)<br />Tel
+            (hotline) Sunday: <a href="tel:52566138">52&#8209;56&#8209;61&#8209;38</a> (08:00 am – 14:00 pm)
           </li>
           <li class="footer__item footer__item--indent">
             <div class="footer__icon-wrapper">
               <img src="img/footer/mail-icon.svg" alt="Icon: mail" />
             </div>
-            cherly.lawson@example.com
+            <a href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
           </li>
         </ul>
       </div>
@@ -301,15 +300,15 @@
     <!-- /.footer-wrapper -->
     <div class="footer-bottom">
       <div class="footer-bottom__text">
-        <span class="footer-bottom__item">Disclaimer</span>
-        <span class="footer-bottom__item">Conditions of use</span>
-        <span class="footer-bottom__item">Cancellation policy</span>
+        <span class="footer-bottom__item"><a class="footer-bottom__link" href="#">Disclaimer</a></span>
+        <span class="footer-bottom__item"><a class="footer-bottom__link" href="#">Conditions of use</a></span>
+        <span class="footer-bottom__item"><a class="footer-bottom__link" href="#">Cancellation policy</a></span>
       </div>
       <!-- /.footer-bottom__text -->
       <img
-        src="img/footer/pay.png"
+        data-src="img/footer/pay.png"
         alt="Icons: pay"
-        class="footer-bottom__icons"
+        class="footer-bottom__icons b-lazy"
       />
     </div>
     <!-- /.footer-bottom -->
@@ -423,7 +422,7 @@
 <script src="js/parallax.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/jquery.mask.min.js"></script>
-<script src="js/aos.js"></script>
+<script src="js/blazy.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

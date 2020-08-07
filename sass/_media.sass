@@ -42,7 +42,8 @@
     &-top
       padding: 30px 0
     &__search
-      margin: auto
+      margin-left: 40px
+      margin-right: auto
     &-menu
       padding: 22.5px 0
       &__link
@@ -60,6 +61,7 @@
   .reviews
     &-slider
       &__item
+        padding: 0 67px 30px
         max-width: 580px
     &__title
       font-size: 30px
@@ -84,7 +86,7 @@
   .footer
     padding: 73px 0 33px 0
     &-wrapper
-      grid-template-columns: 1fr 1fr 1fr 20% 1fr 1fr
+      grid-template-columns: 1fr 10% 1fr 20% 1fr 1fr
       grid-row-gap: 40px
     &__logo
       grid-row: 1 / 2
@@ -109,6 +111,7 @@
       &-details
         grid-row-start: 3
         grid-column: span 5
+        margin-top: 20px
       &-form
         max-width: 540px
         grid-row-start: 4
@@ -165,6 +168,8 @@
     &__user
       margin-bottom: 27px
     &__search
+      margin-left: auto
+      margin-right: auto
       margin-bottom: 39px
       max-width: 340px
   .user
@@ -307,6 +312,9 @@
     padding-bottom: 0
     &__title
       font-size: 18px
+    &-slider
+      &__text
+        text-align: left
   .activities
     padding-top: 0
     padding-bottom: 60px
@@ -429,31 +437,45 @@
 @media (max-height: 500px) and (max-width: 767px)
   .navbar
     &-menu
+      display: grid
+      grid-template-rows: 55px 55px 55px
+      grid-auto-rows: minmax(55px, min-content)
+      grid-template-columns: 12% 12% 12% 1fr 12% 12% 12%
+      align-items: start
+      justify-items: center
       &--mobile
         justify-content: flex-start
         min-height: 100vh
         flex-wrap: wrap
       &__item
-        margin-bottom: 6px
+        margin-bottom: 2px
+        grid-row: 3
+      &__link
+        font-size: 10px 
+        font-weight: 500
     &__user
-      margin-bottom: 17px
+      margin-bottom: 10px
+      grid-row: 1
+      grid-column: 4
     &__search
       margin-top: 0
-      margin-bottom: 15px
+      margin-bottom: 55px
       max-width: 300px
+      grid-row: 2
+      grid-column: 3 / 6
   .user
     &__name
       display: none
 @media (max-height: 500px)
   .modal
     &__input
-      padding: 0 10px
+      padding: 0 20px
       height: 30px
     &__message
-      padding: 0 10px
-      min-height: 50px
+      padding: 0 20px
+      height: auto
     &__dialog
-      padding: 15px
+      padding: 20px
       height: 90%
       width: 60%
     &__message

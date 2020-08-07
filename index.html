@@ -139,7 +139,7 @@
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="swiper-slide__image"
-                  src="img/hotel/hotel-1.png"
+                  src="img/hotel/hotel-1.jpeg"
                   alt="hotel-photo"
                 />
               </div>
@@ -154,20 +154,6 @@
                 <img
                   class="swiper-slide__image"
                   src="img/hotel/hotel-3.jpeg"
-                  alt="hotel-photo"
-                />
-              </div>
-              <div class="swiper-slide hotel-slider__item">
-                <img
-                  class="swiper-slide__image"
-                  src="img/hotel/hotel-4.jpeg"
-                  alt="hotel-photo"
-                />
-              </div>
-              <div class="swiper-slide hotel-slider__item">
-                <img
-                  class="swiper-slide__image"
-                  src="img/hotel/hotel-5.jpeg"
                   alt="hotel-photo"
                 />
               </div>
@@ -252,9 +238,9 @@
           <div class="package">
             <div class="package__image">
               <img
-                src="img/packages/package-1.jpeg"
+                data-src="img/packages/package-1.jpeg"
                 alt="Photo: Hotel Blue Haven"
-                class="package__photo"
+                class="package__photo b-lazy"
               />
             </div>
             <!-- /.package__image -->
@@ -319,9 +305,9 @@
           <div class="package">
             <div class="package__image">
               <img
-                src="img/packages/package-2.jpeg"
+                data-src="img/packages/package-2.jpeg"
                 alt="Photo: LUX* Belle Mare"
-                class="package__photo"
+                class="package__photo b-lazy"
               />
             </div>
             <!-- /.package__image -->
@@ -386,9 +372,9 @@
           <div class="package">
             <div class="package__image">
               <img
-                src="img/packages/package-3.jpeg"
+                data-src="img/packages/package-3.jpeg"
                 alt="Photo: White Palace"
-                class="package__photo"
+                class="package__photo b-lazy"
               />
             </div>
             <!-- /.package__image -->
@@ -453,9 +439,9 @@
           <div class="package">
             <div class="package__image">
               <img
-                src="img/packages/package-4.jpeg"
+                data-src="img/packages/package-4.jpeg"
                 alt="Photo: Luxury Place"
-                class="package__photo"
+                class="package__photo b-lazy"
               />
             </div>
             <!-- /.package__image -->
@@ -520,9 +506,9 @@
           <div class="package">
             <div class="package__image">
               <img
-                src="img/packages/package-5.jpeg"
+                data-src="img/packages/package-5.jpeg"
                 alt="Photo: Hotel Five Star"
-                class="package__photo"
+                class="package__photo b-lazy"
               />
             </div>
             <!-- /.package__image -->
@@ -797,10 +783,10 @@
         <div class="activities-wrapper">
           <div class="card activities__card" data-aos="fade-down" data-aos-delay="300">
             <img
-              src="img/activities/activities-1.jpeg"
+              data-src="img/activities/activities-1.jpeg"
               alt="The curious corner 
 of chamarel"
-              class="activities__image"
+              class="activities__image b-lazy"
             />
             <h3 class="card__title">The curious corner of chamarel</h3>
             <button
@@ -811,10 +797,10 @@ of chamarel"
           <!-- /.card activities__card -->
           <div class="card activities__card" data-aos="fade-down" data-aos-delay="400">
             <img
-              src="img/activities/activities-2.jpeg"
+              data-src="img/activities/activities-2.jpeg"
               alt="Gymkhana club golf
 course"
-              class="activities__image"
+              class="activities__image b-lazy"
             />
             <h3 class="card__title">Gymkhana club golf course</h3>
             <button 
@@ -825,10 +811,10 @@ course"
           <!-- /.card activities__card -->
           <div class="card activities__card" data-aos="fade-down" data-aos-delay="500">
             <img
-              src="img/activities/activities-3.jpeg"
+              data-src="img/activities/activities-3.jpeg"
               alt="Tamarind falls hiking
 trip - full day"
-              class="activities__image"
+              class="activities__image b-lazy"
             />
             <h3 class="card__title">
               Tamarind falls hiking trip&nbsp;- full day
@@ -841,10 +827,10 @@ trip - full day"
           <!-- /.card activities__card -->
           <div class="card activities__card" data-aos="fade-down" data-aos-delay="600">
             <img
-              src="img/activities/activities-4.jpeg"
+              data-src="img/activities/activities-4.jpeg"
               alt="The blue marine discovery
 quest"
-              class="activities__image"
+              class="activities__image b-lazy"
             />
             <h3 class="card__title">The blue marine discovery quest</h3>
             <button 
@@ -861,11 +847,13 @@ quest"
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            src="img/footer/vertical-logo.svg"
+          <a class="footer-wrapper__link" href="index.html">
+            <img
+            data-src="img/footer/vertical-logo.svg"
             alt="Logo: Best Tour Plan"
-            class="footer__logo"
+            class="footer__logo b-lazy"
           />
+          </a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">all categories</h3>
             <ul class="footer__ul">
@@ -1045,9 +1033,9 @@ quest"
           </div>
           <!-- /.footer-bottom__text -->
           <img
-            src="img/footer/pay.png"
+            data-src="img/footer/pay.png"
             alt="Icons: pay"
-            class="footer-bottom__icons"
+            class="footer-bottom__icons b-lazy"
           />
         </div>
         <!-- /.footer-bottom -->
@@ -1162,6 +1150,7 @@ quest"
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/aos.js"></script>
+    <script src="js/blazy.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
